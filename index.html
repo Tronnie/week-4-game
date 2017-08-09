@@ -5,6 +5,7 @@
   <title>Crystal</title>
   <link rel="stylesheet" type= "text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
@@ -14,31 +15,48 @@
     </div><br />
 
     <div class = "instructionBox">
-      <p>1.  You will be given a random number at the start of the game.
-      </p>
-      <p>2.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
-      </p>
-      <p>3.  You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.
-      </p>
-      <p>4.  The value of each crystal is hidden from you until you click on it.
-      </p>
-      <p>5.  Each time when the game starts, the game will change the values of each crystal.
-      </p>
+      <h3>Instructions</h3>
+        <p>1.  You will be given a random number at the start of the game.
+        </p>
+        <p>2.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+        </p>
+        <p>3.  You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.
+        </p>
+        <p>4.  The value of each crystal is hidden from you until you click on it.
+        </p>
+        <p>5.  Each time when the game starts, the game will change the values of each crystal.
+        </p>
     </div><br />
 
-    <div class = "randomNumber"></div><br />
+    <div class = "randomNumber">
+      <h2>Random number: <span id= "randomNumber"></span>
+      </h2>
+    </div><br />
 
     <div class ="scoreBox"></div><br />
       <h3>""</h3>
-      <h3>Your Wins:</h3>
-      <h3>Your losses:</h3>
+      <!-- <h3 id = "numberWins">Your Wins:</h3>
+      <h3 id = "numberLosses">Your losses:</h3> -->
+      <h3>
+        Your Wins: <span id="numberWins"></span>
+        <br />
+        Your Losses: <span id="numberLosses"></span>
+      </h3>
     </div><br />
 
     <div class = "gems">
-      <img src ="./assets/images/jade.jpg" alt="Jade" width="50px" height="50px"/>
-      <img src ="./assets/images/ruby.jpg" alt="Ruby" width="40px" height="50px" />
-      <img src ="./assets/images/amber.jpg" alt="Amber" width="80px" height="70px" />
-      <img src="./assets/images/sapphire.jpg" alt="Sapphire" width="45px" height="45px"/>
+      <button id="jadeButton">
+          <img src ="./assets/images/jade.jpg" alt="Jade" width="50px" height="50px"/>
+      </button>
+      <button id="rubyButton">
+          <img src ="./assets/images/ruby.jpg" alt="Ruby" width="40px" height="50px" />
+      </button>
+      <button id="amberButton">
+          <img src ="./assets/images/amber.jpg" alt="Amber" width="50px" height="50px" />
+      </button>
+      <button id="sapphireButton">
+        <img src="./assets/images/sapphire.jpg" alt="Sapphire" width="45px" height="50px"/>
+      </button>
     </div><br /><br /><br /><br /><br />
 
     <div class = "totalScoreTitle">
@@ -46,13 +64,14 @@
     </div>
 
     <div class = "answerBox">
+      <h2>your answer is:
+        <span id="playerTotal"></span>
+      </h2>
 
     </div>
 
-
-    <script src="./assets/javascript/game.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js">  </script>
 
   </container>
 </body>
