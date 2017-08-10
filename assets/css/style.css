@@ -4,51 +4,101 @@
 
 body{
   font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: white;
+  text-align: center;
 }
 
 .container{
+
+  padding: 0;
 
 }
 
   .titleBox{
     background:orange;
+    color: white;
+    /*margin: auto;*/
+    margin-top: 0;
+    padding: 20px;
+    width: 500px;
+
   }
 
   .instructionBox{
-    background: blue;
-
+    background: #edc39a;
+    text-align: left;
+    width: 500px;
+    color: green;
   }
 
   .randomNumber{
-    background: magenta;
+    background: #b2b9c4;
+    width: 250px;
+    height: 200px;
+    float:left;
   }
+    #randomNumber{
+      text: right;
+      font-size: 46pt;
+    }
 
   .scoreBox{
-    background: gray;
+    background: teal;
+    width: 150px;
+    height: 200px;
+    float: left;
+
   }
     #numberWins{
-      color: white;
+      /*color: white;*/
+      text-align: right;
     }
     #nubmerLosses{
-      color: white;
+      /*color: white;*/
+      text-align: right;
     }
 
   .gems {
-      float:right;
-      padding: 5px;
-      background: teal;
+      clear:both;
+      height: 200px;
+      width: 500px;
+      /*float:right;*/
+      border:2px black;
+      padding: 50px;
+      background: white;
+      align-content: center;
+
     }
+      #jadeButton,
+      #rubyButton,
+      #amberButton,
+      #sapphireButton {
+        height: 100px;
+        background-color: white;
+        /*border: none;*/
+
+      }
 
   .totalScoreTitle {
-    background: purple;
+    clear:both;
+    width: 250px;
+    background: #b2b9c4;
   }
   .answerBox{
-    background: green;
+    width:250px;
+    height: 200px;
+    background: #b2b9c4;
   }
     #playerTotal{
+      font-size: 40pt;
       color:red;
+
     }
 
 footer{
+  clear: both;
+
+  padding: 2px;
+  background: white;
   text-align: center;
 }
