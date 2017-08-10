@@ -2,7 +2,53 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
-    .gems {
-      float:left;
+.container{
+
+}
+
+  .titleBox{
+    background:orange;
+  }
+
+  .instructionBox{
+    background: blue;
+
+  }
+
+  .randomNumber{
+    background: magenta;
+  }
+
+  .scoreBox{
+    background: gray;
+  }
+    #numberWins{
+      color: white;
     }
+    #nubmerLosses{
+      color: white;
+    }
+
+  .gems {
+      float:right;
+      padding: 5px;
+      background: teal;
+    }
+
+  .totalScoreTitle {
+    background: purple;
+  }
+  .answerBox{
+    background: green;
+  }
+    #playerTotal{
+      color:red;
+    }
+
+footer{
+  text-align: center;
+}
