@@ -37,12 +37,13 @@ body{
     height: 200px;
     float:left;
   }
-    #randomNumber{
+    #randomNumber{ 
       text: right;
       font-size: 46pt;
     }
 
   .scoreBox{
+    margin-left: 30px;
     background: teal;
     width: 150px;
     height: 200px;
